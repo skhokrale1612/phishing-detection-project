@@ -1,7 +1,7 @@
 # PhishGuard Backend API Specification
 **Version:** 1.0  
 **Base URL:** `http://127.0.0.1:5000`  
-**Status:** Functional (ChatGPT-4o + Keyword Fallback + Confidence Guard)
+**Status:** Functional (gemini-1.5-flash + Keyword Fallback + Confidence Guard)
 
 ---
 
