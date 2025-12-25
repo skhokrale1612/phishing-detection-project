@@ -43,18 +43,22 @@ UI Implementation Guide
 
 ## 4. Example Scenarios
 Case A: High-Confidence Phishing
+```json
 {
   "label": "phishing",
   "reason": "Detected a fake login link and urgent language typical of bank scams.",
   "confidence": 0.94
 }
+```
 
 Case B: Low-Confidence / "Confidence Guard" Active
+```json
 {
   "label": "suspicious",
   "reason": "AI detected minor risks, but confidence is low. Proceed with caution.",
   "confidence": 0.45
 }
+```
 
 ## 5. Security & CORS
 The backend uses `Flask-CORS`. If you encounter a 'Cross-Origin' error in the Chrome Extension:
@@ -70,4 +74,3 @@ Ensure the URL is exactly `http://127.0.0.1:5000/api/classify.`
 | :--- | :--- | :--- |
 |400     |    Bad Request   |  "Check if your JSON key is named ""text""."|
 |500     |    Server Error  |   Check terminal logs for API key or connection issues.|
-
