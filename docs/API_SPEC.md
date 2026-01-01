@@ -1,12 +1,12 @@
 # PhishGuard Backend API Specification
 **Version:** 1.0  
 **Base URL:** `http://127.0.0.1:5000`  
-**Status:** Functional (gemini-1.5-flash + Keyword Fallback + Confidence Guard)
+**Status:** Functional (Groq Llama-3 + Keyword Fallback + Confidence Guard)
 
 ---
 
 ## 1. Overview
-This API receives raw email text and returns a security classification. It uses **GPT-4o** for primary analysis and a **Keyword Scan** as a fallback. It includes a "Confidence Guard" to minimize false positives.
+This API receives raw email text and returns a security classification. It utilizes `Groq's Llama-3` (via the Groq API) for high-speed primary analysis and a `Keyword Scan` as a local fallback. It includes a "Confidence Guard" to manage low-certainty AI results.
 
 ---
 
